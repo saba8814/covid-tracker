@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COVID TRACKER</title>
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
+    <script src="assets/scripts/variables.js"></script>
+    <script src="assets/scripts/script.js"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/></head>
+<body>
+    <div class="container">
+        <img src="assets/images/logo.jpg" class="logo" alt="Nema fotografije">
+        <div class="heading">
+            <h3>Mini skola programiranja</h3>
+            <h2>CoVID tracker</h2>
+        </div>
+        <div class="search">
+            <input type="text" class="searchTerm" id="searchTerm" placeholder="Uneseti drzavu cije podatke zelite vidjet!" >
+            <button type="submit" class="searchButton" onclick="getData()" >
+                <i class="fa fa-search"></i>
+            </button>
+        </div>
+        <div class="dataWrap" id="dataWrap">
+            
+        </div>
+    </div>
+</body>
+</html>
